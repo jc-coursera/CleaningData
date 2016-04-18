@@ -1,13 +1,13 @@
-The purpose of this project is to demonstrate my ability to collect, work with, 
-and clean a data set. The goal is to prepare tidy data that can be used for later 
-analysis. The following are the required files: 
+The purpose of this project is to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later 
+analysis. 
 
-1) a tidy data set created by a file called run_analysis.R based on project requirement. 
-   The data source is from:  
-   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+The script file run_analysis.R will process the source data( from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+based on the project requirements. 
 
-2) a link to a Github repository with run_analysis.R. 
+It will first load the data from both test and training sections, then create a data frame with required features only. 
+And then process decriptive values for both activities and data set columns before merge everything together. After that,
+it will use dcast to calculate the final result and create it as a separate data set. At the end, it will export the data set 
+into a text file. 
 
-3) a code book(CodeBook.md) that describes the variables, the data, and any transformations or work 
-that is performed to clean up the data.  
+For more detailed information, check out the attached run_analysis.R and code book(CodeBook.md).  
 
