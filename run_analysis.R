@@ -78,4 +78,4 @@ melt_data      = melt(all_data, id = id_labels, measure.vars = data_labels)
 tidy_data   = dcast(melt_data, Activity + Subject ~ variable, mean)
 
 # Create uploading file
-write.csv(tidy_data, file = "./Cleandata_assignment/tidy_data.csv", row.names=F)
+write.table(tidy_data, file = "./Cleandata_assignment/tidy_data.txt", row.names=F)
